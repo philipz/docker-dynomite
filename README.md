@@ -9,7 +9,6 @@ To setup Dynomite single node with redis backend:
 - `docker run -d --name dynomite --link redisserver:redisserver -p 8101:8101 -p 8102:8102 -p 22222:22222 philipz/dynomite`
 
 ##Usage
--------
 ### One Node
 
 To access redis
