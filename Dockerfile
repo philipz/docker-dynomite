@@ -26,8 +26,6 @@ RUN apk del --virtual git && \
     apk del --virtual openssl-dev && \
     apk del --virtual libtool && rm -rf /var/cache/apk/*
 
-EXPOSE 8101
-EXPOSE 8102
-EXPOSE 22222
+EXPOSE 8101 8102 22222
 
 CMD ["src/dynomite", "--conf-file=conf/dynomite.yml", "-v11"]
